@@ -13,6 +13,7 @@ public interface GameService {
 	
 	Game updateGame(Game game);
 	boolean deleteGame(Long id);
+	Game findGameById(Long id);
 	
 	
 }

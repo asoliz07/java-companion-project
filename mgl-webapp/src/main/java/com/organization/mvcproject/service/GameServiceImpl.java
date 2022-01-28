@@ -13,12 +13,6 @@ import com.organizatoin.mvcproject.repository.MockGameDAO;
 @Service
 public class GameServiceImpl implements GameService {
 
-	/**
-	 * TODO 2.0 The class that interacts with persistent data is called a Data Access Object(DAO)
-	 *  or a Repository class. The private static list is mocking our persistance of games.
-	 *   
-	 *  Move this list, and methods operating on this list to an appropriately named package and class.
-	 */
 	
 	@Autowired
 	private MockGameDAO gameDao;
@@ -40,6 +34,11 @@ public class GameServiceImpl implements GameService {
 	@Override
 	public boolean deleteGame(Long id) {
 		return gameDao.deleteGame(id);
+	}
+
+	@Override
+	public Game findGameById(Long id) {
+		return gameDao.findGameById(id);
 	}
 
 
