@@ -37,4 +37,9 @@ public class GameServiceImpl implements GameService {
 		  return gameDaoMock.saveGame(game);
 	}
 
+	@Override
+	public Game findGameById(Long id) {
+		return gameDaoMock.findGameById(id);
+	}
+
 }

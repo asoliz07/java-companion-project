@@ -14,4 +14,6 @@ public interface GameService {
 	
 	Game updateGame(Game game);
 
+	Game findGameById(Long id);
+
 }
